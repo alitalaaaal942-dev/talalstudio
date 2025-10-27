@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Home | Talal Studio</title>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css" />
 <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">Talal Studio</div>
 
-    <!-- Hamburger menu for mobile -->
-    <div class="hamburger">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
+    <!-- Use a real button for accessibility & reliable tapping -->
+    <button
+      id="hamburger"
+      class="hamburger"
+      aria-label="Open menu"
+      aria-controls="primary-navigation"
+      aria-expanded="false"
+    >
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
 
-    <ul class="nav-links">
+    <ul id="primary-navigation" class="nav-links" data-state="closed">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="services.html">Services</a></li>
@@ -28,9 +33,8 @@
     </ul>
   </nav>
 
-  <!-- Hero Section -->
   <header class="hero">
-    <img src="profile.jpg" alt="Ali Talal" class="profile">
+    <img src="profile.jpg" alt="Ali Talal" class="profile" />
     <div class="hero-text">
       <h1>Ali Talal</h1>
       <p>Transforming Your Vision — From Design to Development</p>
@@ -38,30 +42,28 @@
     </div>
   </header>
 
-  <!-- Quick Services -->
   <section class="quick-services container">
     <h2>𝐌𝐲 𝐄𝐱𝐩𝐞𝐫𝐭𝐢𝐬𝐞</h2>
     <div class="cards">
       <div class="card">
         <h3>𝐃𝐢𝐠𝐢𝐭𝐚𝐥 𝐌𝐚𝐫𝐤𝐞𝐭𝐞𝐫</h3>
-        <p>Meta & Google Ad's, SEO, social media, and marketing strategies for growth</p>
+        <p>Meta & Google Ads, SEO, social media, and marketing strategies for growth</p>
       </div>
       <div class="card">
         <h3>𝐅𝐫𝐨𝐧𝐭𝐞𝐧𝐝 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫</h3>
-        <p>HTML, CSS, Javascript frontend developer & Shopify Complete Web designer</p>
+        <p>HTML, CSS, JavaScript & Shopify web design</p>
       </div>
       <div class="card">
-        <h3>𝐆𝐫𝐚𝐩𝐡𝐢𝐜 𝐃𝐞𝐬𝐢𝐠𝐧𝐢𝐧𝐠</h3>
-        <p>Branding building and graphic design services. Brand identity, Brand Growth, Brand Building</p>
+        <h3>𝐆𝐫𝐚𝐩𝐡𝐢𝐜 𝐃𝐞𝐬𝐢𝐠𝐧</h3>
+        <p>Brand identity, growth, and complete brand systems</p>
       </div>
       <div class="card">
         <h3>𝐔𝐈/𝐔𝐗 𝐃𝐞𝐬𝐢𝐠𝐧𝐞𝐫</h3>
-        <p>Creating UI & UX Designing for frontend web developments.</p>
+        <p>Clean, usable interfaces for modern web apps</p>
       </div>
     </div>
   </section>
 
-  <!-- Portfolio Preview -->
   <section class="portfolio-preview container">
     <h2>Recent Projects</h2>
     <div class="projects">
@@ -72,10 +74,8 @@
     <a href="portfolio.html" class="btn">View All Projects →</a>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>© Talal Studio</p>
   </footer>
 </body>
 </html>
-
